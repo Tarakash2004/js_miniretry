@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    
+    <div class="cont">
+        <div id="wrapper">
+            <h2>FD Rate Calculator</h2>
+            
+                <input type="text" id="input" placeholder="first name">
+                <input type="text" id="input1" placeholder="last name">
+               
+            <div>
+                <button type="submit" onclick="myresponse()">click me</button>
+            </div>
+            <h1 id="sen1"></h1>
+            
+            
+    
+    </div>
+   
+    
+    <script>
+        
+        function myresponse()
+        {
+            const val = document.getElementById("input").value;
+            const val1 = document.getElementById("input1").value;
+            let result = document.getElementById("sen1")
+            result.innerHTML = "welcome Mr" + " " + val + " " + val1;
+        }
+
+    </script>
+</body>
+</html>
